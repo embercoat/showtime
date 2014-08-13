@@ -1,0 +1,14 @@
+#dynamic * {
+	line-height: 125%;
+}
+#dynamic ul, #dynamic ol {
+	margin-left: 14px;
+}
+#dynamic ul {
+	
+	list-style-type: disc;
+}
+
+#dynamic ol {
+	list-style-type: decimal;
+}

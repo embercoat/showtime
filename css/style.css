@@ -1,0 +1,414 @@
+/**
+Teckentabell �ver Entypo-symbolerna: http://www.entypo.com/characters/
+**/
+
+
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+	body { width: 98%;}
+	div#wrapper{ width: 94%; margin: 20px auto; top: 0px; left: 0px;}
+	div#header, div#master, div#content, div#social , div#form{ width: 100%; margin: 0; }
+	div#wrapper, div#title, div#social, div#about, div#form{ float: none; }
+	div#about img { float: none;}
+	div#social { padding-left: 0px; }
+	input.button { margin: 0; }
+	.pizza { display: none; }
+	.tomat { display: inline !important; float: none;}
+	.tomat img, div.col { width: 90%;}
+	h2 { clear: both; }
+}
+
+
+
+html, body {border: 0; margin: 0; padding: 0;}
+
+body {
+  	font: 1.2em 'Open Sans', sans-serif;
+	font-weight: 800;
+	background: #ffffff url(../images/bg.jpg) fixed no-repeat;
+  	line-height: 100%;
+  	width: 100%;
+	color: #1F3959;
+}
+
+a {
+	color: #1F3959;
+	text-decoration: none;
+	text-transform:uppercase;
+}
+
+a:hover {
+	color: #00CCFF;
+}
+
+a img {
+  border: none;/*remove border for linked images*/
+}
+
+h1 {font: 2.8em 'pacificoregular', Arial, sans-serif; letter-spacing: 0; margin: 0px;}
+h2 {font: 2em 'pacificoregular', Arial, sans-serif; letter-spacing: 0; margin: 0px; padding-left: 10px; display: inline;}
+p {text-transform:uppercase;}
+
+a.icon {font: 2em/0 'entyporegular'; display: inline-block; width: 20px; height: 20px; overflow: hidden; padding-top: 15px; margin-bottom: -7px;}
+li:before{font: 2em/0 'entyporegular';}
+li.mime_video:before {content: "\1F3AC" ;}
+li.mime_image:before {content: "\1F304" ;}
+li.mime_webpage:before {content: "\1F4D6" ;}
+li.mime_music:before {content: "\1F3B5" ;}
+ul { float: left; margin: 0; padding: 0 0 0 10px; text-transform:uppercase;}
+li { float: left; list-style: none outside none; margin: 0; padding: 0;}
+
+/***** Main Layout ****/
+
+.tomat {
+	display: none ;
+}
+
+#master {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: left;
+	padding-bottom: 50px;
+}
+
+#wrapper {
+	width: 1000px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#header {
+	position: relative;
+	background: rgba(255,255,255,0.2);
+	width: 100%;
+	height: 100px;
+	margin: 0px;
+}
+
+#logo{
+	padding-left: 10px;
+	float: left;
+	width: 200px;
+}
+
+#nav-global {
+	position:absolute;
+	bottom: 0px;
+	right: 0px;
+	float: right;
+	width: 750px;
+}
+#nav-global ul {
+    float: right;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+#nav-global li {
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#nav-global a {
+    color: rgba(32,58,90,0.5);
+    display: block;
+    float: left;
+    font-size: 1em;
+    margin: 0 2px 0 0;
+    padding: 6px 8px;
+    text-decoration: none;
+}
+#nav-global ul li.active a {
+    color: rgba(32,58,90,1);
+}
+
+#nav-global a.active {
+	color: rgba(32,58,90,1);
+}
+#nav-global a:hover {
+	color: rgba(32,58,90,1);
+}
+#inner-wrapper{
+	display: block;
+	width: 100%;
+	height: 800px;
+	position: relative;
+	overflow: hidden;
+}
+#assets_container{
+	margin-top: -5px;
+}
+
+#assets {
+	display: block;
+	float: left;
+	background: rgba(255,255,255,0.2);
+	width: 250px;
+	height: 100%;
+	margin-top: 4px;
+	padding-bottom: 20px;
+}
+#assets a.add, #playlist-menu a.add { font: 3em/0 'entyporegular'; width: 30px; height: 30px; float: none; margin-left: 40px;  }
+#assets ul { width: 100%; }
+#assets ul li:nth-child(1) { width: 75%; }
+#assets ul li:nth-child(2) { width: 10%; }
+#assets ul li:nth-child(3) { width: 10%; }
+#assets li { height: 40px;}
+
+#playlist-menu {
+	float: right;
+	background: rgba(255,255,255,0.2);
+	width: 746px;
+	height: 110px;
+	margin-top: 4px;
+	display: block;
+	padding-bottom: 20px;
+}
+
+#content {
+	float: right;
+	background: rgba(255,255,255,0.2);
+	width: 736px;
+	height: 100%;
+	margin-top: 4px;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	overflow: auto;
+}
+#settings_content {
+	float: right;
+	background: rgba(255,255,255,0.2);
+	width: 100%;
+	height: 100%;
+	margin-top: 4px;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	overflow: auto;
+}
+
+#playlists {
+	height: 20px;
+	margin-top: 10px;
+}
+
+#playlists ul li {
+	display: inline;
+}
+#playlists ul li a {
+	color: rgba(32,58,90,0.5);
+}
+#playlists ul.now a,.playlists ul:hover a  {
+	color: rgba(32,58,90,1);
+}
+
+#playlists a.icon {
+	float: none;
+	height: 20px!important; 
+}
+#playlist_schedule li {
+	width: 100px;
+}
+#playlist_delete_button {
+	top: -48px;
+	position: relative;
+	left: 450px;
+}
+
+/* Listan*/
+.list-title { width: 100%;display: inline-block; padding-bottom: 8px; }
+.list div, .list-title div{ display: inline-block;}
+.list {	width: 100%; height: 25px; font-size: 0.9em; font-weight: 400; padding-top: 4px;}
+.del { width: 5%; float: left; text-align: center; }
+.order { width: 10%; float: left;text-align: center; }	
+.name { width: 40%;float: left; }
+.type { width: 20%;float: left; }
+.duration { width: 10%;float: left; }
+
+#content div.list:nth-child(odd) { background-color: #DEE2D7; }
+
+#footer {
+	position: absolute;
+	display: block;
+	background: rgba(255,255,255,0.2);
+	width: 100%;
+	margin-top: 4px;
+	vertical-align: middle;	
+	padding-bottom: 3px;
+	padding-left: -10px;
+}
+
+#footer p {
+	font-size: 0.9em;
+	font-weight: 400;
+	margin: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+#form {
+	float: left;
+	width: 45%;
+}
+
+/* Form fields
+-------------------------------------------------------------- */
+fieldset {
+	width: 94%;
+	border: 0px;
+}
+
+input[type=text], input[type=password],
+input.text, input.title,
+textarea, input {
+	background-color: rgba(0,0,0,0);
+	border: 0px;
+	border-bottom: 1px dotted #e9e9e9;
+	width: 95%;
+	padding: 2px;
+	font-size: 1em;
+    clear: both;
+    float: left;
+}
+input[type=text]:focus, input[type=password]:focus,
+input.text:focus, input.title:focus,
+textarea:focus, input:focus {
+  border-color:#666;
+  background-color: #eee;
+}
+
+input.button {
+	border: 0 none;
+	background: none repeat scroll 0 0 #222222;
+    color: #939393;
+    float: right;
+    font: 400 14px/16px 'Open Sans',verdana,Georgia,serif;
+    height: 30px;
+    margin: 10px 0px 0 0;
+    padding: 0 0 5px;
+    width: 75px;
+}
+
+input.text,
+input.title   { width: 250px;}
+input.title   { font-size:1.5em; }
+textarea      { width: 250px; height: 100px;}
+
+form.inline { line-height:3; }
+form.inline p { margin-bottom:0; }
+
+label {
+    display: block;
+    float: left;
+    width: 90%;
+	padding-top: 5px;
+	height: 25px;
+}
+input[type="checkbox"], select#playlist_priority {
+    clear: none;
+    width: 45px;
+	float: right;
+	margin-top: 5px;
+	height:20px;
+}
+input[type="submit"], button {
+    width: 100px;
+}
+.floatRight {
+    float: right;
+}
+
+
+/* Norpat */
+#popup {
+	margin-left: -250px;
+	position: absolute;
+	left: 50%;
+	width: 500px;
+	height: 100px;
+	top: 100px;
+	text-align: center;
+}
+.popup {
+    z-index: 99999;
+	/* background: rgba(255,255,255,0.5); */
+    display: none;
+    position: fixed;
+    top: 100px;
+    width: 600px;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    margin-left: -300px;
+}
+.end { 
+	font-size: 3em !important;
+	line-height: 0px;
+	width: 30px!important;
+	height: 30px!important;
+	position: absolute;
+	right: -15px;
+	top: -15px;
+}
+
+.settings {
+	padding: 10px;
+	background: #fff;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+.settings ul {
+	padding: 5px;
+	width: 100%;
+}
+
+.settings ul:nth-child(odd) {
+	background-color: #DEE2D7;
+}
+
+.settings ul.popup-title li {
+	margin-bottom: 5px;
+	font-weight: 800;
+	font-size: 1em;
+}
+.settings li {
+	display: inline;
+	width: 170px;
+	font-weight: 500;
+	font-size: 0.9em;
+}
+
+#asset_tools {
+    width: 100%;
+}
+
+.close_popup {
+    float: right;
+}
+.img_remove_asset, .img_add_asset_playlist {
+    display: inline;
+    margin-top: -6px;
+}
+
+#img_add_playlist {
+    height: 20px;
+    padding-right: 8px;
+}
+#playlist_devices_pop table {
+    text-align: center;
+}
+#playlist_devices_pop input[type="checkbox"] {
+    float: none;
+    height: 20px;
+}
+.device {
+		height: 30px;
+}

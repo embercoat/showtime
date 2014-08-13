@@ -1,0 +1,29 @@
+label {
+	float: left;
+	clear: both;
+	display:block;
+	width: 200px;
+}
+input,select, textarea, button {
+	margin-bottom: 10px;
+	float:left;
+	clear:both;
+	padding: 3px;
+	border: 1px solid black;
+	width: 300px;
+}
+input[type="checkbox"] {
+	clear: none;
+	width: 20px;
+	margin: 2px 2px 10px;
+}
+input[type="submit"], button {
+	width: 100px;
+}
+
+.floatRight {
+	float: right;
+}
+textarea {
+	width: 500px;
+}
