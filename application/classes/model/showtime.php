@@ -133,7 +133,7 @@ class model_showtime extends Model {
             DB::insert('playlist_assets', array('playlist', 'asset', 'sortorder', 'duration'))->values($p)->execute();
     }
 
-    public function update_playlist_asset_duration($post){
+    public function playlist_update_playlist_asset_duration($post){
         DB::update('playlist_assets')
         ->set(array('duration' => $post['duration']))
         ->where('playlist', '=', $post['playlist'])

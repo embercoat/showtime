@@ -19,8 +19,8 @@ return array
 			 */
 			'hostname'   => 'localhost',
 			'database'   => 'screenly',
-			'username'   => "user",
-			'password'   => "passwd",
+			'username'   => "screenly",
+			'password'   => "OcId47rv",
 			'persistent' => FALSE,
 
 		),
