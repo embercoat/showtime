@@ -1,0 +1,26 @@
+<?php defined('SYSPATH') or die('No direct access allowed.');
+
+return array
+(
+	'default' => array
+	(
+		'type'       => 'mysql',
+		'connection' => array(
+			'hostname'   => 'localhost',
+<<<<<<< HEAD
+			'database'   => 'showtime',
+			'username'   => "user",
+			'password'   => "passwd",
+=======
+			'database'   => 'screenly',
+			'username'   => "screenly",
+			'password'   => "OcId47rv",
+>>>>>>> 986ac067c50a7c0f2364e2afcfcb8258a489c662
+			'persistent' => FALSE,
+		),
+		'table_prefix' => '',
+		'charset'      => 'utf8',
+		'caching'      => TRUE,
+		'profiling'    => TRUE,
+	),
+);
