@@ -12,8 +12,7 @@
         			<option value="image">Bild</option>
         			<option value="webpage">Webbsida</option>
         			<option value="video">Video</option>
-					<option value="rtmp">Ström (RTMP)</option>
-					<option value="livestream">Livestream</option>
+				<option value="livestream">Livestream</option>
     			</select>
     			<br />
     			<div id="asset_uri_div" style="display: none;">
