@@ -6,7 +6,7 @@ class Controller_Status extends Controller_SuperController {
         parent::after();
     }
     public function before(){
-        $this->config['screener'] = Kohana::config('screener');
+        $this->config['showtime'] = Kohana::config('showtime');
     }
     public function action_index(){
         $this->content = View::factory('status/statuslist');

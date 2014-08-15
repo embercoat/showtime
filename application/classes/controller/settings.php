@@ -8,7 +8,7 @@ class Controller_Settings extends Controller_SuperController {
         parent::after();
     }
     public function before(){
-        $this->config['screener'] = Kohana::config('screener');
+        $this->config['showtime'] = Kohana::config('showtime');
     }
     public function action_playlist_devices(){
         $list = array();

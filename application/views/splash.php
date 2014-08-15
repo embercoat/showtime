@@ -13,7 +13,6 @@
 	<div style="width: 1050px;margin-left: -25%;position: absolute;left: 50%;top: 350px; color: white;">
         <p>IP: <span style="font-size: 40px;"><?php echo $data['address']; ?></span></p>
         <p>Name: <span style="font-size: 40px;"><?php echo $data['name']; ?></span></p>
-
 	</div>
   </body>
 </html>

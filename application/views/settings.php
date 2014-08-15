@@ -42,10 +42,7 @@
 			&#169; 2014 Scripter
 		</p>
 	</div> <!-- footer -->
-</div> <!-- wrapper --><?php echo View::factory('forms/playlist'); ?>
-<?php echo View::factory('forms/asset'); ?>
-<?php echo View::factory('forms/devices'); ?>
-<?php echo View::factory('playlist_devices'); ?>
+</div>
 <?php echo View::factory('popup'); ?>
 </body>
 </html>
