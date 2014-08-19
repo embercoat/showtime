@@ -7,7 +7,7 @@ class Controller_Pages extends Controller {
         $this->response->body($this->content);
     }
     public function before(){
-        $this->config['screener'] = Kohana::config('screener');
+        $this->config['showtime'] = Kohana::config('showtime');
     }
     public function action_get_assets(){
         $r = DB::select('*')->from('assets')->order_by('name', 'ASC')->execute()->as_array();

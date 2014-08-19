@@ -3,7 +3,7 @@ class model_showtime extends Model {
     protected $config;
     
     public function model_showtime(){
-        $this->config['screener'] = Kohana::config('screener');
+        $this->config['showtime'] = Kohana::config('showtime');
     }
 
     public function get_assets($id = false){
@@ -61,7 +61,7 @@ class model_showtime extends Model {
         $r = $sql->execute()->as_array();
 
         if(count($r) && strlen($r['uri']) == 32){
-            unlink($this->config['screener']['assetpath'].$uri);
+            unlink($this->config['showtime']['assetpath'].$uri);
         }
 
     }
@@ -72,7 +72,7 @@ class model_showtime extends Model {
             $uri = $post['asset_uri'];
         } else {
             $uri = md5_file($file['asset_file']['tmp_name']);
-            move_uploaded_file($file['asset_file']['tmp_name'], $this->config['screener']['assetpath'].$uri);
+            move_uploaded_file($file['asset_file']['tmp_name'], $this->config['showtime']['assetpath'].$uri);
         }
         $id = $post['asset_id'];
         unset($post['asset_id']);

@@ -19,11 +19,6 @@
 				Status
 				</a>
 			</li>
-			<li>
-				<a title="#" href="#">
-				Hinkrobur
-				</a>
-			</li>
 		</ul>
 	</div>
-</div><!-- Header -->
+</div>

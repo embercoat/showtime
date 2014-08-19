@@ -259,7 +259,7 @@ li { float: left; list-style: none outside none; margin: 0; padding: 0;}
 /* Form fields
 -------------------------------------------------------------- */
 fieldset {
-	width: 94%;
+	width: 90%;
 	border: 0px;
 }
 
@@ -392,6 +392,8 @@ input[type="submit"], button {
 
 .close_popup {
     float: right;
+	margin-right: 40px;
+    margin-top: 20px;
 }
 .img_remove_asset, .img_add_asset_playlist {
     display: inline;

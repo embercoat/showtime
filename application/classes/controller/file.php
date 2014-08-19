@@ -5,7 +5,7 @@ class controller_file extends Controller{
         $this->response->body($this->content);
     }*/
     public function before(){
-        $this->config['screener'] = Kohana::config('screener');
+        $this->config['showtime'] = Kohana::config('showtime');
     }
     function action_get($file){
         //list($file, $null) = explode('.', $file);
