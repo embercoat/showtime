@@ -67,7 +67,8 @@ class model_showtime extends Model {
     }
 
     public function save_asset($post, $file){
-        if(array_search($post['asset_mimetype'], array('webpage', 'rtmp', 'livestream'))){
+        var_dump($post);
+        if(array_search($post['asset_mimetype'], array('webpage', 'rtmp', 'livestream')) !== FALSE){
             $uri = $post['asset_uri'];
         } else {
             $uri = md5_file($file['asset_file']['tmp_name']);

@@ -13,6 +13,7 @@
         			<option value="webpage">Webbsida</option>
         			<option value="video">Video</option>
 				<option value="livestream">Livestream</option>
+				<option value="rtmp">RTMP</option>
     			</select>
     			<br />
     			<div id="asset_uri_div" style="display: none;">
