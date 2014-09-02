@@ -127,7 +127,7 @@ class model_showtime extends Model {
         DB::delete('playlist_assets')->where('playlist', '=', $post['playlist'])->where('asset', '=', $post['asset'])->execute();
     }
 
-    public function playlist_update_assets(){
+    public function playlist_update_assets($post){
         DB::delete('playlist_assets')->where('playlist', '=', $post[0]['playlist'])->execute();
         foreach($post as $p)
             DB::insert('playlist_assets', array('playlist', 'asset', 'sortorder', 'duration'))->values($p)->execute();
